@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <TextView style="@style/TextViewBlackStyleThin"
+                  android:padding="10dp"
+                  android:text="Team Name"/>
+        <EditText
+                android:hint="Team Name"
+                android:inputType="textPersonName"
+                style="@style/EditTextStyle"
+                android:id="@+id/et_team_name"/>
+        <TextView style="@style/TextViewBlackStyleThin"
+                  android:padding="10dp"
+                  android:text="Wins"/>
+        <EditText
+                android:hint="Wins"
+                android:inputType="number"
+                android:id="@+id/et_team_wins"
+                style="@style/EditTextStyle"/>
+        <TextView style="@style/TextViewBlackStyleThin"
+                  android:padding="10dp"
+                  android:text="Points"/>
+        <EditText
+                android:hint="Points"
+                android:inputType="number"
+                android:id="@+id/et_team_points"
+                style="@style/EditTextStyle"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_add_update_team"
+                android:text="Add/Update"/>
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:id="@+id/btn_delete_update_team"
+                android:text="Delete User"/>
+
+    </LinearLayout>
+</RelativeLayout>

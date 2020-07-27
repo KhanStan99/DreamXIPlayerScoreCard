@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TableRow
+                android:gravity="center_vertical"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:id="@+id/cl_header"
+                android:weightSum="6">
+
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:id="@+id/txt_rank_1"
+                      android:text="Rank"
+                      android:gravity="center"
+                      style="@style/TextViewBlackStyle"/>
+
+            <TextView
+                    android:text="Team"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewBlackStyle"
+                    android:id="@+id/txt_team_name_1"
+            />
+            <TextView
+                    android:text="Wins"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/txt_wins_1"
+                    style="@style/TextViewBlackStyle"/>
+            <TextView
+                    android:text="Points"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_points_1"
+                    style="@style/TextViewBlackStyle"
+            />
+
+
+        </TableRow>
+
+        <TableRow
+                android:gravity="center_vertical"
+                android:background="@color/colorGray"
+                android:id="@+id/cl_team_item"
+                android:weightSum="6">
+
+            <TextView android:layout_width="0dp" android:layout_height="42dp"
+                      android:gravity="center"
+                      android:textSize="28sp"
+                      android:layout_marginStart="10dp"
+                      android:layout_marginEnd="10dp"
+                      android:id="@+id/txt_rank"
+                      android:layout_weight="0.7"
+            />
+            <TextView
+                    android:text="Hyderabadi Biryani"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    style="@style/TextViewBlackStyleThin"
+                    android:id="@+id/txt_team_name"
+            />
+            <TextView
+                    android:text="8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_wins"
+                    style="@style/TextViewBlackStyleThin"
+            />
+            <TextView
+                    android:text="37"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/txt_points"
+                    style="@style/TextViewBlackStyleThin"
+            />
+
+        </TableRow>
+
+        <View
+                android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/colorBlack"/>
+
+    </TableLayout>
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:id="@+id/cl_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:padding="8dp">-->
+
+    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" android:id="@+id/txt_rank_1"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/txt_team_name_1" android:layout_marginEnd="8dp"-->
+    <!--android:text="Rank"-->
+    <!--style="@style/TextViewWhiteStyle"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"/>-->
+
+    <!--<TextView-->
+    <!--android:text="Team"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/txt_rank_1"-->
+    <!--style="@style/TextViewWhiteStyle"-->
+    <!--android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"-->
+    <!--android:id="@+id/txt_team_name_1" app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:text="Wins"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/txt_wins_1"-->
+    <!--style="@style/TextViewWhiteStyle"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/txt_points_1"-->
+    <!--android:layout_marginEnd="16dp" app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.50"/>-->
+    <!--<TextView-->
+    <!--android:text="Points"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/txt_points_1"-->
+    <!--style="@style/TextViewWhiteStyle"-->
+    <!--app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.50" app:layout_constraintEnd_toEndOf="parent"-->
+    <!--android:layout_marginEnd="8dp"/>-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:background="@color/colorGray"-->
+    <!--android:padding="8dp"-->
+    <!--android:id="@+id/cl_team_item">-->
+
+    <!--<TextView android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent" android:id="@+id/txt_rank"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/txt_team_name" android:layout_marginEnd="8dp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="30sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"/>-->
+
+    <!--<TextView-->
+    <!--android:text="Hyderabadi Biryani"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/txt_rank"-->
+    <!--style="@style/TextViewBlackStyle"-->
+    <!--android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"-->
+    <!--android:id="@+id/txt_team_name" app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:text="8"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/txt_wins"-->
+    <!--style="@style/TextViewBlackStyle"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.457"-->
+    <!--tools:layout_editor_absoluteX="287dp"/>-->
+    <!--<TextView-->
+    <!--android:text="37"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/txt_points"-->
+    <!--style="@style/TextViewBlackStyle"-->
+    <!--app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.457"-->
+    <!--tools:layout_editor_absoluteX="349dp"/>-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+</LinearLayout>
